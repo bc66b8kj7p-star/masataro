@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>カエルのまさたろ Official Site</title>
+
+  <!-- SEO（検索エンジン対策）設定 -->
+  <title>カエルのまさたろ Official Site | 公式ホームページ</title>
+  <meta name="description" content="「カエルのまさたろ」の公式ホームページです。YouTubeチャンネル動画、公式ブログ、愛用機材やおすすめグッズ情報を発信中！">
+  <meta name="keywords" content="カエルのまさたろ, まさたろ, YouTube, カエルのまさたろチャンネル, ブログ">
+  
+  <!-- SNS・Google表示用（OGP設定） -->
+  <meta property="og:title" content="カエルのまさたろ Official Site">
+  <meta property="og:description" content="「カエルのまさたろ」の公式ホームページです。YouTube動画やブログをお届けします！">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bc66b8kj7p-star.github.io/masataro/">
+  <meta property="og:site_name" content="カエルのまさたろ Official Site">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
@@ -215,181 +227,4 @@
     .blog-card:hover {
       border-color: var(--primary);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .blog-meta {
-      display: flex;
-      gap: 10px;
-      font-size: 0.8rem;
-      color: var(--text-sub);
-    }
-
-    .blog-tag {
-      background: var(--secondary);
-      color: var(--primary);
-      padding: 2px 8px;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .blog-title {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      font-weight: bold;
-    }
-
-    /* 収益化エリア（アフィリエイト・投げ銭） */
-    .monetize-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-
-    .monetize-card {
-      background: #fdfbf7;
-      border: 1px solid #f0ebdf;
-      border-radius: 12px;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .monetize-card h4 {
-      font-size: 1rem;
-      color: #d97706;
-      margin-bottom: 8px;
-    }
-
-    .monetize-card p {
-      font-size: 0.8rem;
-      color: var(--text-sub);
-      margin-bottom: 12px;
-    }
-
-    .monetize-btn {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: bold;
-      transition: var(--transition);
-    }
-
-    .monetize-btn:hover {
-      background: var(--accent-hover);
-    }
-
-    /* フッター */
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.85rem;
-      color: var(--text-sub);
-    }
-
-    /* レスポンシブ調整 */
-    @media (max-width: 600px) {
-      .yt-card {
-        flex-direction: column;
-        text-align: center;
-      }
-      .nav-list {
-        font-size: 0.8rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="header-content">
-      <div class="avatar-wrapper">
-        <div class="avatar">🐸</div>
-      </div>
-      <h1>カエルのまさたろ</h1>
-      <p class="subtitle">のんびり動画投稿とブログをお届けします！</p>
-    </div>
-  </header>
-
-  <nav>
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#youtube">YouTube</a></li>
-      <li class="nav-item"><a href="#blog">ブログ</a></li>
-      <li class="nav-item"><a href="#goods">おすすめ</a></li>
-      <li class="nav-item"><a href="#support">応援</a></li>
-    </ul>
-  </nav>
-
-  <container>
-    <!-- YouTube セクション -->
-    <section id="youtube">
-      <div class="yt-card">
-        <div class="yt-info">
-          <h3>🐸 まさたろチャンネル</h3>
-          <p>YouTubeで動画を配信中！チャンネル登録よろしくね！</p>
-        </div>
-        <a href="https://youtube.com" target="_blank" class="yt-btn">YouTubeを見る ↗</a>
-      </div>
-    </section>
-
-    <!-- ブログ セクション -->
-    <section id="blog">
-      <h2 class="section-title">📝 まさたろの日記（ブログ）</h2>
-      <div class="blog-grid">
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span>2026.04.01</span>
-            <span class="blog-tag">お知らせ</span>
-          </div>
-          <div class="blog-title">「カエルのまさたろ」公式ホームページを開設しました！</div>
-        </article>
-
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span>2026.03.28</span>
-            <span class="blog-tag">動画裏話</span>
-          </div>
-          <div class="blog-title">最新動画の撮影裏話とNG集について</div>
-        </article>
-      </div>
-    </section>
-
-    <!-- 収益化・おすすめグッズ -->
-    <section id="goods">
-      <h2 class="section-title">🛒 まさたろの愛用品（アフィリエイト）</h2>
-      <div class="monetize-grid">
-        <div class="monetize-card">
-          <h4>愛用マイク・機材</h4>
-          <p>YouTube撮影で実際に使っているマイクや機材を紹介！</p>
-          <a href="#" class="monetize-btn">おすすめを見る</a>
-        </div>
-        <div class="monetize-card">
-          <h4>愛用デスク周り</h4>
-          <p>快適な作業環境を作っているお気に入りアイテムです。</p>
-          <a href="#" class="monetize-btn">おすすめを見る</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 応援（OFUSE等） -->
-    <section id="support">
-      <h2 class="section-title">🎁 まさたろを応援する（投げ銭）</h2>
-      <p style="font-size:0.9rem; margin-bottom:15px; color:var(--text-sub);">
-        いつも応援ありがとうございます！いただいたサポートは動画のクオリティ向上や新しい機材の購入に活用させていただきます。
-      </p>
-      <div style="text-align: center;">
-        <a href="https://ofuse.me" target="_blank" class="monetize-btn" style="background:#e11d48; padding:10px 25px; font-size:0.95rem;">
-          ❤️ OFUSEで応援メッセージを送る
-        </a>
-      </div>
-    </section>
-  </container>
-
-  <footer>
-    <p>&copy; 2026 カエルのまさたろ All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html>
+      box-shadow: 0 4
